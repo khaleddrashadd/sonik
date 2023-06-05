@@ -32,7 +32,7 @@ const SongCard = ({ song, i, isPlaying, activeSong, data }) => {
             activeSong={activeSong}
           />
         </div>
-        <img alt="song_img" src={song.photo_url || backupImg} />
+        <img alt="song_img" src={song.images?.coverart || backupImg} />
       </div>
       <div className="mt-4 flex flex-col">
         <p className="font-semibold text-lg text-white truncate">
