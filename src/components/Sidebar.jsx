@@ -7,13 +7,13 @@ import { HiOutlineMenu } from 'react-icons/hi';
 
 const NavLinks = ({ handleClick }) => {
   return (
-    <ul className="list-none flex flex-col mt-10">
+    <ul className="list-none flex flex-col mt-6">
       {links.map((link, index) => (
-        <li key={index} className="">
+        <li key={index}>
           <NavLink
             onClick={handleClick && handleClick}
             to={link.to}
-            className="my-8 flex justify-start items-center flex-row text-sm font-medium text-gray-400 hover:text-cyan-400"
+            className="my-6 flex justify-start items-center flex-row text-sm font-medium text-gray-400 hover:text-cyan-400"
           >
             <link.icon className="w-6 h-6 mr-2" />
             {link.name}
@@ -27,11 +27,11 @@ const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-      <nav className="md:flex hidden flex-col py-10 w-[240px] px-4 bg-[#191624]">
+      <nav className="md:flex hidden flex-col py-10 w-[150px] px-4 bg-[#191624]">
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks />
       </nav>
-      <div className="absolute md:hidden block top-6 right-3">
+      <div className="absolute md:hidden block top-8 right-3">
         {mobileMenuOpen ? (
           <RiCloseLine
             onClick={() => setMobileMenuOpen(false)}
@@ -45,7 +45,7 @@ const Sidebar = () => {
         )}
       </div>
       <nav
-        className={`absolute top-0 h-screen w-2/3 bg-gradient-to-tl from-white/10 to-[#483d8b] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${
+        className={`absolute top-0 h-screen w-1/2 bg-gradient-to-tl from-white/10 to-[#483d8b] backdrop-blur-lg z-10 p-6 md:hidden smooth-transition ${
           mobileMenuOpen ? 'left-0' : '-left-full'
         }`}
       >
