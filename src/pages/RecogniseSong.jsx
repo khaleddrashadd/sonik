@@ -63,6 +63,11 @@ const RecogniseSong = () => {
       className="flex flex-col gap-y-8 justify-center items-center mt-48"
       onClick={handleMouseDown}
     >
+      <div>
+        <h2 className="text-white font-bold text-3xl">
+          {ispressed ? 'Press again to Search' : 'Press To Listen'}
+        </h2>
+      </div>
       <div
         className={`select-none flex justify-center items-center w-36 h-36 bg-black/70 ${
           ispressed ? 'animate-pulseheavy' : 'animate-pulselight transition-all'
