@@ -13,11 +13,21 @@ module.exports = {
         slideright: 'slideright 1s ease-in-out',
         wave: 'wave 1.2s linear infinite',
         slowfade: 'slowfade 2.2s ease-in-out',
+        pulselight: 'pulselight 1.2s alternate infinite ease-in-out',
+        pulseheavy: 'pulseheavy 0.5s alternate infinite ease-in-out',
       },
       keyframes: {
         slowfade: {
           from: { opacity: 0 },
           to: { opacity: 1 },
+        },
+        pulselight: {
+          from: { transform: 'scale(1)' },
+          to: { transform: 'scale(1.1)' },
+        },
+        pulseheavy: {
+          from: { transform: 'scale(1)' },
+          to: { transform: 'scale(1.2)' },
         },
         slideup: {
           from: { opacity: 0, transform: 'translateY(25%)' },

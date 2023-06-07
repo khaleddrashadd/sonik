@@ -5,7 +5,7 @@ import SongDetails from './SongDetails';
 import Search from './Search';
 import TopCharts from './TopCharts';
 import AroundYou from './AroundYou';
-
+import RecogniseSong from './RecogniseSong';
 export {
   Discover,
   Search,
@@ -14,4 +14,5 @@ export {
   SongDetails,
   TopCharts,
   AroundYou,
+  RecogniseSong,
 };

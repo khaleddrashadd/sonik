@@ -4,6 +4,8 @@ import { useState } from 'react';
 import { links } from '../assets/constants';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineMenu } from 'react-icons/hi';
+import { useRef } from 'react';
+import { useEffect } from 'react';
 
 const NavLinks = ({ handleClick }) => {
   return (
@@ -25,22 +27,23 @@ const NavLinks = ({ handleClick }) => {
 };
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
-      <nav className="md:flex hidden flex-col py-10 w-[150px] px-4 bg-[#191624]">
+      <nav className="md:flex hidden flex-col py-10 w-[150px] px-4 bg-[#191624] pt-8">
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks />
       </nav>
-      <div className="absolute md:hidden block top-8 right-3">
+      <div className="absolute md:hidden block top-4 right-3 z-10">
         {mobileMenuOpen ? (
           <RiCloseLine
             onClick={() => setMobileMenuOpen(false)}
-            className="w-6 h-6 text-white mr-2"
+            className="w-8 h-8 text-white mr-2"
           />
         ) : (
           <HiOutlineMenu
             onClick={() => setMobileMenuOpen(true)}
-            className="w-6 h-6 text-white mr-2"
+            className="w-8 h-8 text-white mr-2 p-1"
           />
         )}
       </div>

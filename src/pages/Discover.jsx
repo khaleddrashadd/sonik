@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
+import { useState } from 'react';
 import { Error, Loader, SongCard } from '../components';
 import { genres } from '../assets/constants';
 import { useGetSongsByGenreQuery } from '../redux/services/shazam';
-import { useState } from 'react';
 
 const Discover = () => {
   const [genre, setGenre] = useState('POP');
