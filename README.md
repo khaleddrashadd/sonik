@@ -1,15 +1,15 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 <div align="center">
-<img width="60" height="68" alt="EverShop Logo" src="./src/assets/logo.svg"/>
+<img width="60" height="68" alt="sonik app Logo" src="./src/assets/logo.svg"/>
 </div>
 <div align="center">
-  <h1 align="center">Chatvia</h1>
+  <h1 align="center">Sonik</h1>
 </div>
     <a style="display:flex;justify-content:center;margin-bottom:1rem; font-weight:bold;" href="https://sonik-app-khaled.netlify.app/">Demo</a>
 
 
 <div align="center">
-<img alt="EverShop" width="950" src="./src/assets/sonik.png"/>
+<img alt="sonik-app" width="950" src="./src/assets/sonik.png"/>
 </div>
 
 ## Introduction
@@ -23,7 +23,7 @@ Explore my demo Sonik app.
 
 <div>
   <a href="https://sonik-app-khaled.netlify.app/" target="_blank">
-    <img  alt="chatvia-demo" height="35" src="./src/assets/logo.svg">
+    <img  alt="sonik-demo" height="35" src="./src/assets/logo.svg">
   </a>
 </div>
 
