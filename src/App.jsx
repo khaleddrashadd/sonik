@@ -27,7 +27,7 @@ const App = () => {
       <ScrollToTop />
       <div className="relative flex h-screen">
         <Sidebar />
-        <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#121286]">
+        <div className="flex-1 flex flex-col bg-gradient-to-br from-black to-[#520c0c]">
           <Searchbar />
 
           <div className="px-6 h-screen  overflow-y-scroll hide-scrollbar flex xl:flex-row flex-col-reverse">

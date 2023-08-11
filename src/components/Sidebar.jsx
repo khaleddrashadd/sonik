@@ -4,8 +4,6 @@ import { useState } from 'react';
 import { links } from '../assets/constants';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineMenu } from 'react-icons/hi';
-import { useRef } from 'react';
-import { useEffect } from 'react';
 
 const NavLinks = ({ handleClick }) => {
   return (
@@ -30,7 +28,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <nav className="md:flex hidden flex-col py-10 w-[150px] px-4 bg-[#191624] pt-8">
+      <nav className="md:flex hidden flex-col py-10 w-[150px] px-4 bg-[#2e071f] pt-8">
         <img src={logo} alt="logo" className="w-full h-14 object-contain" />
         <NavLinks />
       </nav>

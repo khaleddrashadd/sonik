@@ -13,8 +13,7 @@ import Track from './Track';
 import VolumeBar from './VolumeBar';
 
 const MusicPlayer = () => {
-  const { activeSong, currentSongs, currentIndex, isActive, isPlaying } =
-    useSelector(state => state.player);
+  const { activeSong, currentSongs, currentIndex, isActive, isPlaying } = useSelector((state) => state.player);
   const [duration, setDuration] = useState(0);
   const [seekTime, setSeekTime] = useState(0);
   const [appTime, setAppTime] = useState(0);
@@ -79,7 +78,7 @@ const MusicPlayer = () => {
           value={appTime}
           min="0"
           max={duration}
-          onInput={event => setSeekTime(event.target.value)}
+          onInput={(event) => setSeekTime(event.target.value)}
           setSeekTime={setSeekTime}
           appTime={appTime}
         />
@@ -91,15 +90,16 @@ const MusicPlayer = () => {
           repeat={repeat}
           currentIndex={currentIndex}
           onEnded={handleNextSong}
-          onTimeUpdate={event => setAppTime(event.target.currentTime)}
-          onLoadedData={event => setDuration(event.target.duration)}
+          onTimeUpdate={(event) => setAppTime(event.target.currentTime)}
+          onLoadedData={(event) => setDuration(event.target.duration)}
         />
       </div>
       <VolumeBar
         value={volume}
         min="0"
         max="1"
-        onChange={event => setVolume(event.target.value)}
+        // possible to make in custom element
+        onChange={(event) => setVolume(event.target.value)}
         setVolume={setVolume}
       />
     </div>
